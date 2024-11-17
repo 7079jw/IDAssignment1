@@ -348,3 +348,256 @@
     display: none;
   }
   
+/* Desktop Layout */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation */
+.navbar {
+  background: #333;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.nav-brand {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.search-container {
+  display: flex;
+  gap: 0.5rem;
+  flex: 0 1 400px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: none;
+}
+
+.search-button {
+  padding: 0.5rem 1rem;
+  background: #666;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 70vh;
+  background: #f0f0f0;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Stats Section */
+.stats-section {
+  padding: 4rem 2rem;
+  background: #fff;
+}
+
+.stats-dashboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.stat-card {
+  background: #f5f5f5;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.stat-placeholder {
+  height: 60px;
+  background: #ddd;
+  margin-top: 1rem;
+  border-radius: 4px;
+}
+
+/* Currently Reading Section */
+.current-reads-section {
+  padding: 4rem 2rem;
+  background: #f8f8f8;
+}
+
+.current-reads-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.current-book-card {
+  display: flex;
+  gap: 1rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.book-cover {
+  width: 100px;
+  height: 150px;
+  background: #ddd;
+  border-radius: 4px;
+}
+
+.book-info {
+  flex: 1;
+}
+
+.book-title-placeholder {
+  height: 20px;
+  background: #ddd;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
+.book-progress-placeholder {
+  height: 40px;
+  background: #ddd;
+  border-radius: 4px;
+}
+
+/* Featured Section */
+.featured-section {
+  padding: 4rem 2rem;
+  background: #fff;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.featured-card {
+  background: #f5f5f5;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.featured-cover {
+  height: 200px;
+  background: #ddd;
+}
+
+.featured-info {
+  padding: 1rem;
+}
+
+.featured-title-placeholder {
+  height: 20px;
+  background: #ddd;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
+.featured-desc-placeholder {
+  height: 60px;
+  background: #ddd;
+  border-radius: 4px;
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      padding: 1rem;
+      position: static;
+  }
+
+  .search-container {
+      width: 100%;
+      margin: 1rem 0;
+  }
+
+  .nav-links {
+      width: 100%;
+      justify-content: space-between;
+  }
+
+  .hero-section {
+      margin-top: 0;
+      height: 50vh;
+  }
+
+  .stats-dashboard {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+  }
+
+  .current-reads-grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+  }
+
+  .featured-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+  }
+
+  .current-book-card {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .book-cover {
+      width: 120px;
+      height: 180px;
+  }
+
+  .book-info {
+      width: 100%;
+  }
+}
+
+/* Small Mobile Layout */
+@media (max-width: 480px) {
+  .stats-dashboard {
+      grid-template-columns: 1fr;
+  }
+
+  .featured-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+  }
+}
