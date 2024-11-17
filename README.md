@@ -4,17 +4,18 @@ Novel Tracking and Discovery Platform
 Purpose
 
 This is a website for book lovers to keep track of their reading, discover new novels, and connect with others who share the same passion for books.
+
 What the Website Does
 
-    Helps you manage your reading list.
-    Lets you find new novels by genre or recommendations.
-    Allows you to see reviews and share your thoughts about books.
+Helps you manage your reading list.
+Lets you find new novels by genre or recommendations.
+Allows you to see reviews and share your thoughts about books.
 
 Target Audience
 
-    Readers who want to organize what they’re reading.
-    People looking for book recommendations.
-    Anyone who loves to talk about books!
+Readers who want to organize what they’re reading.
+People looking for book recommendations.
+Anyone who loves to talk about books!
 
 Pages on the Website and Features
 
