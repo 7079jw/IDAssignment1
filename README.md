@@ -1,4 +1,4 @@
-# my-newbie-repo
+# Novel List
 Novel Tracking and Discovery Platform
 
 Purpose
