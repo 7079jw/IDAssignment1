@@ -3,100 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Novel List Website</title>
+    <title>FableHaven</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
-        <div class="logo">Book Hub</div>
-        <ul class="nav-links">
-            <li><a href="#banner">Home Page</a></li>
-            <li><a href="#library">My Library</a></li>
-            <li><a href="#discover">Discover Novels</a></li>
-            <li><a href="#community">Community</a></li>
+        <div class="logo">FableHaven</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#my-library">My Library</a></li>
+            <li><a href="#currently-reading">Currently Reading</a></li>
+            <li><a href="#top-rated-novels">Top-Rated Novels</a></li>
         </ul>
     </nav>
 
-
-    <!-- Banner Section -->
-    <section id="banner" class="banner">
+    <!-- Best-Rated Novel Banner -->
+    <section id="home" class="best-novel-banner">
         <div class="banner-content">
-            <h1>Welcome to Book Hub</h1>
-            <p>Your gateway to the best books and stories.</p>
-            <button>Discover More</button>
+            <h1>FableHaven</h1>
+            <p class="subtitle">Discover the Best in Storytelling</p>
+            <p class="latest">Best-Rated Novel</p>
+            <h2><i>“wwww”</i></h2>
+            <p class="author">By: wwwww</p>
+            <button onclick="location.href='#featured-books'">Read More</button>
         </div>
         <div class="banner-image">
-            <img src="placeholder.jpg" alt="Placeholder Image">
+            <img src="chronicles-aurora.jpg" alt="The Chronicles of Aurora Cover">
         </div>
     </section>
 
-    <!-- User Stats Section -->
-    <section id="stats" class="stats">
-        <h2>Your Stats</h2>
-        <div class="stats-grid">
-            <div class="stat-item">
-                <h3>Books Read</h3>
-                <p>Number of books you've read.</p>
-            </div>
-            <div class="stat-item">
-                <h3>Currently Reading</h3>
-                <p>Books you are currently exploring.</p>
-            </div>
-            <div class="stat-item">
-                <h3>Wishlist</h3>
-                <p>Books saved to your wishlist.</p>
-            </div>
-        </div>
+    <!-- Track Your Library Section -->
+    <section id="my-library" class="about">
+        <h2>Track Your Library</h2>
+        <p>Keep track of books you’re currently reading, have finished, or want to read. Update your progress easily and stay organized.</p>
+        <button onclick="location.href='#my-library'">View Library</button>
     </section>
 
     <!-- Currently Reading Section -->
-    <section id="currently-reading" class="reading-section">
+    <section id="currently-reading" class="currently-reading">
         <h2>Currently Reading</h2>
-        <div class="reading-grid">
-            <div class="reading-item">
-                <img src="placeholder.jpg" alt="Book Cover">
+        <div class="books-grid">
+            <div class="book-item">
+                <img src="placeholder1.jpg" alt="Book Cover">
                 <h3>Book 1</h3>
-                <p>Description of Book 1.</p>
+                <p>Progress: 50%</p>
             </div>
-            <div class="reading-item">
-                <img src="placeholder.jpg" alt="Book Cover">
+            <div class="book-item">
+                <img src="placeholder2.jpg" alt="Book Cover">
                 <h3>Book 2</h3>
-                <p>Description of Book 2.</p>
+                <p>Progress: 30%</p>
             </div>
-            <div class="reading-item">
-                <img src="placeholder.jpg" alt="Book Cover">
+            <div class="book-item">
+                <img src="placeholder3.jpg" alt="Book Cover">
                 <h3>Book 3</h3>
-                <p>Description of Book 3.</p>
+                <p>Progress: 80%</p>
             </div>
         </div>
     </section>
 
     <!-- Top-Rated Novels Section -->
-    <section id="top-rated" class="top-rated-section">
+    <section id="top-rated-novels" class="top-rated">
         <h2>Top-Rated Novels</h2>
-        <div class="top-rated-grid">
-            <div class="top-rated-item">
-                <img src="placeholder.jpg" alt="Book Cover">
-                <h3>Book 4</h3>
-                <p>Description of Book 4.</p>
+        <div class="novels-list-horizontal">
+            <div class="novel-item">
+                <img src="novel1.jpg" alt="Novel Cover 1">
+                <h3>Novel 1</h3>
+                <p>A thrilling adventure that captivates readers.</p>
             </div>
-            <div class="top-rated-item">
-                <img src="placeholder.jpg" alt="Book Cover">
-                <h3>Book 5</h3>
-                <p>Description of Book 5.</p>
+            <div class="novel-item">
+                <img src="novel2.jpg" alt="Novel Cover 2">
+                <h3>Novel 2</h3>
+                <p>An inspiring story of resilience and triumph.</p>
             </div>
-            <div class="top-rated-item">
-                <img src="placeholder.jpg" alt="Book Cover">
-                <h3>Book 6</h3>
-                <p>Description of Book 6.</p>
+            <div class="novel-item">
+                <img src="novel3.jpg" alt="Novel Cover 3">
+                <h3>Novel 3</h3>
+                <p>A magical tale full of wonder and mystery.</p>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer id="footer" class="footer">
-        <p>© 2024 Book Hub. All Rights Reserved.</p>
+        <p>© 2024 FableHaven. All Rights Reserved.</p>
         <ul>
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Terms of Service</a></li>
