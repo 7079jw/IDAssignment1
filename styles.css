@@ -367,9 +367,10 @@ body {
 }
 
 body {
+  margin: 0;
   font-family: 'Arial', sans-serif;
-  line-height: 1.6;
   color: #333;
+  line-height: 1.6;
 }
 
 /* Navigation Bar */
@@ -468,11 +469,13 @@ body {
   border-radius: 10px;
 }
 
-/* About Section */
+/* Track Your Library Section
+========================================================================== */
+/* Stats Section */
 .about {
-  text-align: center;
   padding: 3rem 2rem;
   background: #FFF8E1;
+  text-align: center;
   color: #333;
 }
 
@@ -489,13 +492,67 @@ body {
   margin: 0 auto 1.5rem;
 }
 
-.about button {
-  padding: 0.7rem 1.5rem;
-  background: #FFD700;
+.library-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* Spacing between boxes */
+  flex-wrap: wrap;
+  margin: 1rem 0 2rem; /* Adjusted margins */
+}
+
+.stat-box {
+  width: 240px;
+  height: 180px;
+  background: #FFD700; /* Clean solid yellow */
   color: #000;
-  border: none;
-  cursor: pointer;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-5px); /* Hover lift */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.stat-box h3 {
+  font-size: 1.2rem; /* Moderate size for readability */
+  font-weight: 600; /* Semi-bold for subtle emphasis */
+  text-transform: none; /* No all-caps */
+  margin-bottom: 0.4rem; /* Maintain spacing below the title */
+  color: #333; /* Dark color for better contrast */
+}
+
+.library-stats .stat-box .stat-number {
+  font-size: 3.5rem; /* Large for prominence */
+  font-family: 'Georgia', serif;
   font-weight: bold;
+  color: #000;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.about button {
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  background: #FFD700; /* Same color as the stat boxes */
+  color: #000;
+  border: none; /* Removed black border */
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 8px; /* Slight rounding for a clean look */
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.about button:hover {
+  background: #FFC107; /* Slightly darker yellow on hover */
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
 }
 
 /* Currently Reading Section */
@@ -625,5 +682,5 @@ body {
   color: #007BFF; /* Default blue */
 }
 .footer ul li a:visited {
-  color: #007BFF; /* Ensures visited links stay blue */
+  color: #007BFF; /* stay blue */
 }
