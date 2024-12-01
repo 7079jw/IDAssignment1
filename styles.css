@@ -604,7 +604,7 @@ body {
 
 /* Currently Reading: Container for each book */
 .book-item {
-  width: 220px; /* Set consistent width for each book card */
+  width: 250px; /* Increase the width */
   height: auto; /* Auto-adjust height for content */
   display: flex;
   flex-direction: column;
@@ -693,7 +693,7 @@ body {
 
 /* Individual Novel Card */
 .novel-item {
-  width: 220px; /* Consistent width */
+  width: 250px; /* Increase the width */
   height: auto; /* Auto height for dynamic content */
   display: flex;
   flex-direction: column;
@@ -738,6 +738,7 @@ body {
   line-height: 1.5; /* Improve readability with line height */
   text-align: center; /* Center-align for uniformity */
 }
+
 
 /* ========================================================================================================================= */
 /* Footer */
@@ -1103,3 +1104,38 @@ form textarea {
 .submit-thread-btn:hover {
   background-color: #0056b3;
 }
+
+
+
+.novel-card {
+  position: relative; /* Allows the overlay to position itself relative to the card */
+  width: 250px;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 8px; /* Rounded corners */
+  margin: 10px;
+}
+
+.novel-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fits the card while maintaining its aspect ratio */
+  border-radius: 8px; /* Ensures image corners match card corners */
+}
+
+.novel-card .overlay {
+  position: absolute;
+  bottom: 0; /* Pin the overlay to the bottom */
+  width: 100%; /* Full width of the card */
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  padding: 10px 0; /* Spacing inside the overlay */
+  text-align: center; /* Center the text */
+}
+
+.novel-card .novel-title {
+  color: #fff; /* White text for contrast */
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
