@@ -19,137 +19,189 @@
   </nav>
 
   <!-- Banner -->
-  <div class="banner">
+  <header class="banner">
     <h1>My Library</h1>
     <p>Track what you're reading, have read, or want to read. Update your progress easily.</p>
-  </div>
+  </header>
 
-  <!-- Library Section -->
-  <div class="library-container">
-    <!-- Library Stats -->
-    <div class="library-stats">
-      <div class="stat-box">
-        <h3>Novels Completed</h3>
-        <p>45</p>
-      </div>
-      <div class="stat-box">
-        <h3>Currently Reading</h3>
-        <p>8</p>
-      </div>
-      <div class="stat-box">
-        <h3>Planning to Read</h3>
-        <p>20</p>
+  <!-- Library Stats -->
+  <section class="library-stats">
+    <div class="stat-box">
+      <h3>Novels Completed</h3>
+      <p>45</p>
+    </div>
+    <div class="stat-box">
+      <h3>Currently Reading</h3>
+      <p>8</p>
+    </div>
+    <div class="stat-box">
+      <h3>Planning to Read</h3>
+      <p>20</p>
+    </div>
+  </section>
+
+  <!-- Library Content -->
+  <section class="library-content">
+    <!-- Currently Reading Section -->
+    <div class="section">
+      <h2>Currently Reading</h2>
+      <div class="novels-list">
+        <!-- Novel 1 -->
+        <div class="novel-card">
+          <img src="images/trending3.webp" alt="Cover of Damn Reincarnation">
+          <div class="options-menu" onclick="openModal('modal-id')">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="overlay">
+            <p class="novel-title">Damn Reincarnation</p>
+            <div class="bottom-info">
+              <span class="chapters-read">50/100</span>
+              <span class="rating">8</span>
+            </div>
+          </div>
+        </div>
+        <!-- Novel 2 -->
+        <div class="novel-card">
+          <img src="images/c2.webp" alt="Cover of I'm not a Regressor">
+          <div class="options-menu" onclick="openModal('modal-id')">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="overlay">
+            <p class="novel-title">I'm not a Regressor</p>
+            <div class="bottom-info">
+              <span class="chapters-read">30/150</span>
+              <span class="rating">7</span>
+            </div>
+          </div>
+        </div>
+        <!-- Novel 3 -->
+        <div class="novel-card">
+          <img src="images/c3.webp" alt="Cover of Infinite Mage">
+          <div class="options-menu" onclick="openModal('modal-id')">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="overlay">
+            <p class="novel-title">Infinite Mage</p>
+            <div class="bottom-info">
+              <span class="chapters-read">60/80</span>
+              <span class="rating">9</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- Library Content -->
-    <div class="library-content">
-      <!-- Currently Reading Section -->
-      <div class="section">
-        <h2>Currently Reading</h2>
-        <div class="novels-list">
-          <div class="novel-card">
-            <img src="images/trending3.webp" alt="Cover of Damn Reincarnation">
-            <div class="overlay">
-              <p class="novel-title">Damn Reincarnation</p>
-              <span>Progress: 50%</span>
+    <!-- Completed Novels Section -->
+    <div class="section">
+      <h2>Completed Novels</h2>
+      <div class="novels-list">
+        <!-- Novel 1 -->
+        <div class="novel-card">
+          <img src="images/book3.webp" alt="Cover of Ending Maker">
+          <div class="options-menu" onclick="openModal('modal-id')">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="overlay">
+            <p class="novel-title">Ending Maker</p>
+            <div class="bottom-info">
+              <span class="chapters-read">200/200</span>
+              <span class="rating">9</span>
             </div>
           </div>
-          <div class="novel-card">
-            <img src="images/c2.webp" alt="Cover of I'm not a Regressor">
-            <div class="overlay">
-              <p class="novel-title">I'm not a Regressor</p>
-              <span>Progress: 30%</span>
+        </div>
+        <!-- Novel 2 -->
+        <div class="novel-card">
+          <img src="images/popular5.webp" alt="Cover of The Novel's Extra">
+          <div class="options-menu" onclick="openModal('modal-id')">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="overlay">
+            <p class="novel-title">The Novel's Extra</p>
+            <div class="bottom-info">
+              <span class="chapters-read">350/350</span>
+              <span class="rating">8</span>
             </div>
           </div>
-          <div class="novel-card">
-            <img src="images/c3.webp" alt="Cover of Infinite Mage">
-            <div class="overlay">
-              <p class="novel-title">Infinite Mage</p>
-              <span>Progress: 60%</span>
+        </div>
+        <!-- Novel 3 -->
+        <div class="novel-card">
+          <img src="images/c1.webp" alt="Cover of The Regressor and the Blind Saint">
+          <div class="options-menu" onclick="openModal('modal-id')">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="overlay">
+            <p class="novel-title">The Regressor and the Blind Saint</p>
+            <div class="bottom-info">
+              <span class="chapters-read">120/120</span>
+              <span class="rating">10</span>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Completed Novels Section -->
-      <div class="section">
-        <h2>Completed Novels</h2>
-        <div class="novels-list">
-          <div class="novel-card">
-            <img src="images/book3.webp" alt="Cover of Ending Maker">
-            <div class="overlay">
-              <p class="novel-title">Ending Maker</p>
-            </div>
+    <!-- Planning to Read Section -->
+    <div class="section">
+      <h2>Planning to Read</h2>
+      <div class="novels-list">
+        <div class="novel-card">
+          <img src="images/novel3.jpg" alt="Kidnapped Dragons Cover">
+          <div class="overlay">
+            <p class="novel-title">Kidnapped Dragons</p>
           </div>
-          <div class="novel-card">
-            <img src="images/popular5.webp" alt="Cover of The Novel's Extra">
-            <div class="overlay">
-              <p class="novel-title">The Novel's Extra</p>
-            </div>
+        </div>
+        <div class="novel-card">
+          <img src="images/new3.webp" alt="Cover of Mistaken as a Monstrous Genius Actor">
+          <div class="overlay">
+            <p class="novel-title">Mistaken as a Monstrous Genius Actor</p>
           </div>
-          <div class="novel-card">
-            <img src="images/c1.webp" alt="Cover of The Regressor and the Blind Saint">
-            <div class="overlay">
-              <p class="novel-title">The Regressor and the Blind Saint</p>
-            </div>
+        </div>
+        <div class="novel-card">
+          <img src="images/new1.webp" alt="Cover of Dropped into a Ghost Story">
+          <div class="overlay">
+            <p class="novel-title">Dropped into a Ghost Story</p>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Planning to Read Section -->
-      <div class="section">
-        <h2>Planning to Read</h2>
-        <div class="novels-list">
-          <div class="novel-card">
-            <img src="images/novel7.jpg" alt="Cover of Lord of the Mysteries">
-            <div class="overlay">
-              <p class="novel-title">Lord of the Mysteries</p>
-            </div>
+    <!-- Dropped Section -->
+    <div class="section">
+      <h2>Dropped</h2>
+      <div class="novels-list dropped">
+        <div class="novel-card">
+          <img src="images/c4.jpg" alt="Light of Arad: Forerunner Cover">
+          <div class="overlay">
+            <p class="novel-title">Light of Arad: Forerunner</p>
           </div>
-          <div class="novel-card">
-            <img src="images/novel8.jpg" alt="Cover of The King's Avatar">
-            <div class="overlay">
-              <p class="novel-title">The King's Avatar</p>
-            </div>
+        </div>
+        <div class="novel-card hidden-card">
+          <img src="images/dropped-novel2.jpg" alt="Hidden Novel 2">
+          <div class="overlay">
+            <p class="novel-title">Hidden Novel 2</p>
           </div>
-          <div class="novel-card">
-            <img src="images/novel9.jpg" alt="Cover of Legend of the Sun Knight">
-            <div class="overlay">
-              <p class="novel-title">Legend of the Sun Knight</p>
-            </div>
+        </div>
+        <div class="novel-card hidden-card">
+          <img src="images/dropped-novel3.jpg" alt="Hidden Novel 3">
+          <div class="overlay">
+            <p class="novel-title">Hidden Novel 3</p>
           </div>
         </div>
       </div>
-
-      <div class="section">
-        <h2>Dropped</h2>
-        <div class="novels-list dropped">
-          <!-- Only the first card will remain visible -->
-          <div class="novel-card">
-            <img src="images/dropped-novel.jpg" alt="The Great Mage Returns After 4000 Years">
-            <div class="overlay">
-              <p class="novel-title">The Great Mage Returns After 4000 Years</p>
-            </div>
-          </div>
-      
-          <!-- Add hidden cards -->
-          <div class="novel-card hidden-card">
-            <img src="images/dropped-novel2.jpg" alt="Hidden Novel 2">
-            <div class="overlay">
-              <p class="novel-title">Hidden Novel 2</p>
-            </div>
-          </div>
-          <div class="novel-card hidden-card">
-            <img src="images/dropped-novel3.jpg" alt="Hidden Novel 3">
-            <div class="overlay">
-              <p class="novel-title">Hidden Novel 3</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-        
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="footer">
@@ -158,5 +210,27 @@
       <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Contact</a>
     </div>
   </footer>
+
+  <!-- Library Modal/Edit -->
+  <div id="modal-id" class="modal-overlay">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modal-id')">&times;</span>
+      <form>
+        <label for="status">Status:</label>
+        <select id="status" name="status">
+          <option value="reading">Reading</option>
+          <option value="completed">Completed</option>
+          <option value="dropped">Dropped</option>
+        </select>
+        <label for="chapter-progress">Chapter Progress:</label>
+        <input type="number" id="chapter-progress" name="chapter-progress" value="115">
+        <label for="score">Score:</label>
+        <input type="number" id="score" name="score" value="10">
+        <button type="button" onclick="saveChanges()">Save</button>
+      </form>
+    </div>
+  </div>
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
