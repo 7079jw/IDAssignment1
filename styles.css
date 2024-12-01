@@ -408,35 +408,56 @@ body {
 .best-novel-banner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start; /* Align content to the left */
   padding: 5rem 3rem;
   height: 90vh;
-  background-color: #FFD700;
-  color: #000;
+  background: url('images/banner.png') no-repeat center center/cover;
+  color: #FFFFFF; /* White text for better contrast */
+  position: relative;
+}
+
+/* Lighten the gradient overlay for a softer effect */
+.best-novel-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3) 30%, rgba(0, 0, 0, 0) 70%);
+  z-index: 1; /* Ensure the gradient is above the image but below the text */
 }
 
 .banner-content {
   max-width: 50%;
+  text-align: left;
+  position: relative; /* To stay above the gradient overlay */
+  z-index: 2; /* Ensure the text is above the gradient */
 }
 
 .banner-content h1 {
   font-size: 4rem;
   font-family: 'Georgia', serif;
   font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Subtle text shadow */
+  color: #FAF9F9; /* Slightly off-white for softness */
 }
 
 .banner-content .subtitle {
   font-size: 1.5rem;
   margin: 0.5rem 0;
-  color: #333;
+  color: #EAEAEA; /* Light gray for softer readability */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Subtle shadow */
 }
 
 .banner-content .latest {
   font-size: 1rem;
-  color: #555;
+  color: #DDDDDD; /* Light gray */
   margin-top: 1rem;
   text-transform: uppercase;
   font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Subtle shadow */
 }
 
 .banner-content h2 {
@@ -444,30 +465,36 @@ body {
   font-family: 'Georgia', serif;
   font-style: italic;
   margin: 1rem 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Softer shadow */
+  color: #FFFFFF; /* Bright white for contrast */
 }
 
 .banner-content .author {
   font-size: 1.2rem;
   margin: 0.5rem 0;
   font-style: italic;
-  color: #333;
+  color: #E0E0E0; /* Softer white */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Subtle shadow */
 }
 
 .banner-content button {
   margin-top: 1.5rem;
   padding: 0.8rem 2rem;
-  background: #000;
-  color: #FFD700;
+  background: #FFD700;
+  color: #000;
   border: none;
   cursor: pointer;
   font-weight: bold;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.banner-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
+.banner-content button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
 
 /* Track Your Library Section */
 /* Stats Section */
