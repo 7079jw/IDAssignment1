@@ -556,6 +556,13 @@ body {
   color: #333;
 }
 
+.stat-box p {
+  font-family: 'Georgia', serif;
+  font-size: 3rem; /* Bigger number size */
+  font-weight: bold;
+  margin: 0;
+}
+
 .stat-box .stat-number {
   font-size: 3.5rem;
   font-family: 'Georgia', serif;
