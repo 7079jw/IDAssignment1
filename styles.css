@@ -378,7 +378,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #FFD700;
+  background-color: #1A3A6E;
   padding: 1rem 2rem;
   position: sticky;
   top: 0;
@@ -388,7 +388,7 @@ body {
 .navbar .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #000;
+  color: #FFFFFF;
 }
 
 .navbar ul {
@@ -400,8 +400,12 @@ body {
 .navbar ul li a {
   text-decoration: none;
   font-size: 1rem;
-  color: #000;
+  color: #FFFFFF;
   font-weight: bold;
+}
+
+.navbar ul li a:hover {
+  color: #FFD700; /* Highlight links on hover */
 }
 
 /* Best Novel Banner Section */
@@ -500,9 +504,9 @@ body {
 /* Stats Section */
 .about {
   padding: 4rem 2rem;
-  background: #FFF8E1;
+  background: #F9F5EB;
   text-align: center;
-  color: #333;
+  color: #000000;
 }
 
 .about h2 {
@@ -581,7 +585,8 @@ body {
 .currently-reading {
   text-align: center;
   padding: 4rem 2rem 6rem 2rem;
-  background: #EAEAEA; /* Light grey that matches the design */
+  background: White; 
+  color: #000000;
 }
 
 .currently-reading h2 {
@@ -597,99 +602,150 @@ body {
   flex-wrap: wrap;
 }
 
+/* Currently Reading: Container for each book */
 .book-item {
+  width: 220px; /* Set consistent width for each book card */
+  height: auto; /* Auto-adjust height for content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   text-align: center;
-  background: #FFF;
-  padding: 2rem;
-  border: 1px solid #DDD;
-  border-radius: 10px;
-  width: 260px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for clean look */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #FFFFFF; /* White background */
+  padding: 16px; /* Add inner padding */
+  margin: 20px; /* Add spacing between cards */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
 }
 
 .book-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
 
+/* Currently Reading: Book Cover Image */
 .book-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-  margin-bottom: 1rem;
+  width: 100%; /* Full width of the container */
+  height: 300px; /* Fixed height for consistency */
+  object-fit: cover; /* Ensures the image fits without distortion */
+  border-radius: 6px; /* Slightly rounded corners */
+  margin-bottom: 12px; /* Space below the image */
 }
 
+
+/* Title of the Book (Currently Reading) */
 .book-item h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  color: #333;
+  font-size: 18px; /* Slightly larger for readability */
+  color: #333333; /* Dark gray for contrast */
+  margin: 10px 0; /* Space around the title */
+  font-weight: bold; /* Emphasize the title */
 }
 
+/* Currently Reading: Progress Container */
+.progress-container {
+  width: 90%; /* Match the width of the book cover */
+  background-color: #E0E0E0; /* Light gray for the progress background */
+  border-radius: 5px; /* Rounded edges for progress bar */
+  overflow: hidden; /* Ensures progress bar stays inside */
+  height: 10px; /* Height of the progress bar */
+  margin: 8px 0; /* Spacing above and below */
+}
+
+/* Currently Reading: Progress Bar */
+.progress-bar {
+  height: 100%; /* Full height of the container */
+  background-color: #FFD700; /* Bright yellow for progress */
+  width: 0%; /* Default width (set dynamically) */
+  transition: width 0.3s ease; /* Smooth animation for progress updates */
+}
+
+/* Progress Text */
 .book-item p {
-  font-size: 1.1rem;
-  color: #555;
+  font-size: 17px; /* Slightly larger for better readability */
+  text-align: center; /* Keep alignment consistent */
+  line-height: 1.5; /* Add a bit of spacing for readability */
+  margin-top: 10px; /* Slight spacing above */
 }
 
 /* Top-Rated Novels Section */
 .top-rated {
   text-align: center;
   padding: 4rem 2rem 6rem 2rem;
-  background: #FAFAFA;
+  background: #F9F5EB; /* Same background for consistency */
+  color: #000000;
 }
 
+/* Top-Rated Novels Title */
 .top-rated h2 {
-  font-size: 2.5rem;
+  font-size: 2.5rem; /* Matches the Currently Reading title size */
   margin-bottom: 2rem;
-  font-family: 'Georgia', serif;
+  font-family: 'Georgia', serif; /* Same font as Currently Reading */
 }
 
+/* Novel List Layout */
 .novels-list-horizontal {
   display: flex;
-  gap: 2rem;
+  gap: 2rem; /* Space between cards */
   justify-content: center;
+  flex-wrap: wrap; /* Ensures responsiveness */
 }
 
+/* Individual Novel Card */
 .novel-item {
+  width: 220px; /* Consistent width */
+  height: auto; /* Auto height for dynamic content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  background: #FFF;
-  padding: 2rem;
-  border: 1px solid #DDD;
-  border-radius: 10px;
-  width: 260px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 8px; /* Smooth rounded corners */
+  background-color: #FFFFFF; /* White background */
+  padding: 16px; /* Add inner padding */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effect */
+  margin: 20px; /* Space between novels */
 }
 
+/* Hover Effect for Cards */
 .novel-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
 
+/* Novel Cover Image */
 .novel-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-  margin-bottom: 1rem;
+  width: 100%; /* Responsive width */
+  height: 300px; /* Fixed height for consistency */
+  object-fit: cover; /* Ensures the image fits without distortion */
+  border-radius: 6px; /* Rounded corners for polish */
+  margin-bottom: 12px; /* Space below the image */
 }
 
+/* Title of the Book (Top-Rated Novels) */
 .novel-item h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  color: #333;
+  font-size: 18px; /* Slightly larger for readability */
+  color: #333333; /* Dark gray for emphasis */
+  margin: 10px 0; /* Space around the title */
+  font-weight: bold; /* Make it stand out */
 }
 
+/* Description Text (Top-Rated Novels) */
 .novel-item p {
-  font-size: 1.1rem;
-  color: #555;
+  font-size: 16px; /* Increase font size slightly */
+  color: #555555; /* Softer gray for subtleness */
+  margin-top: 8px; /* Space above the text */
+  line-height: 1.5; /* Improve readability with line height */
+  text-align: center; /* Center-align for uniformity */
 }
 
+/* ========================================================================================================================= */
 /* Footer */
 .footer {
   text-align: center;
   padding: 4rem 2rem;
-  background: #333;
-  color: #FAFAFA;
+  background: #2C2C2C;
+  color: #FFFFFF;
 }
 
 .footer ul {
