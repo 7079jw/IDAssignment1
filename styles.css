@@ -769,8 +769,8 @@ body {
   display: flex;
   justify-content: space-around;
   padding: 1.5rem 2rem;
-  background-color: #f9f9f9;
-  border-bottom: 1px solid #ddd;
+  background-color: #F9F5EB;
+  border-bottom: 1px solid #E0E0E0;
 }
 
 .filters select,
@@ -783,6 +783,7 @@ body {
 
 .filters input {
   width: 200px;
+  color: #333;
 }
 
 /* Sections */
@@ -790,6 +791,7 @@ body {
   margin: 4rem 2rem; /* Increased vertical spacing between sections */
   padding: 1rem 0; /* Added padding to make sections appear larger */
   margin-top: 1rem; /* Add more vertical spacing between sections */
+  background-color: #FFFFFF;
 }
 
 /* Section Title Styling */
@@ -813,23 +815,26 @@ body {
 }
 
 .novel-card {
-  width: 250px; /* Increase the width */
-  height: 350px; /* Increase the height to maintain the book-like aspect ratio */
-  background: #ddd;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 250px; /* Card width */
+  height: 350px; /* Card height */
+  background: #ddd; /* Placeholder background */
   border-radius: 8px; /* Rounded corners */
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add hover effects */
+  display: flex;
+  overflow: hidden; /* Prevent content overflow */
+  align-items: stretch; /* Ensure content stretches to fit the card */
+  justify-content: center; /* Center content horizontally */
+  position: relative; /* Allow absolute positioning for img */
 }
 
 .novel-card img {
-  width: 100%; /* Full width of the card */
-  height: 100%; /* Full height of the card */
-  object-fit: cover; /* Ensures the image maintains its aspect ratio */
-  border-radius: 6px; /* Slight rounding for book shape */
+  position: absolute; /* Allow image to fill the container */
+  top: 0;
+  left: 0;
+  width: 100%; /* Make image fill the card's width */
+  height: 100%; /* Make image fill the card's height */
+  object-fit: cover; /* Ensure the image maintains aspect ratio and covers the card */
 }
+
 
 .novel-card:hover {
   transform: translateY(-5px); /* Lift effect on hover */
@@ -842,6 +847,7 @@ body {
   justify-content: space-between;
   align-items: center; /* Align items vertically in the center */
   margin-bottom: 1.5rem; /* Space below the header */
+  background-color: #FFFFFF;
 }
 
 .top-header .view-all {
@@ -863,22 +869,25 @@ body {
 
 .novel-ranking {
   display: flex;
-  align-items: center;
-  gap: 1rem;
+  align-items: center; /* Align content vertically */
+  gap: 1.5rem; /* Adjust the spacing between image and details */
   background: #fff;
   border: 1px solid #ddd;
-  padding: 1.5rem; /* Increased padding for better spacing */
+  padding: 1rem;
   border-radius: 8px;
   margin-bottom: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Consistent styling */
 }
 
 /* Top Novels Ranking Images - Book Shape */
 .novel-ranking img {
-  width: 70px; /* Adjusted width for book shape */
-  height: 100px; /* Increased height for book shape */
-  object-fit: cover; /* Ensures the image doesn't get distorted */
-  border-radius: 4px; /* Rounded corners for consistency */
+  width: 60px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.novel-ranking div {
+  margin-left: 2rem; /* Increase the left margin to move details further to the right */
 }
 
 .novel-ranking span {
