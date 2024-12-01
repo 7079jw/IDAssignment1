@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community - FableHaven</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">FableHaven</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="library.html">My Library</a></li>
+      <li><a href="discover-novels.html">Discover Novels</a></li>
+      <li><a href="community.html" class="active">Community</a></li>
+    </ul>
+  </nav>
+
+  <!-- Community Page -->
+  <div class="community-page">
+    <!-- Modal for Create Thread -->
+    <div id="create-thread-modal" class="modal-overlay">
+      <div class="modal-content">
+        <span class="close-btn" id="close-modal-btn">&times;</span>
+        <h2>Create a New Thread</h2>
+        <form id="thread-form">
+          <label for="thread-title">Title:</label>
+          <input type="text" id="thread-title" placeholder="Enter thread title" required>
+          
+          <label for="thread-category">Category:</label>
+          <select id="thread-category" required>
+            <option value="">Select a category</option>
+            <option value="general">General</option>
+            <option value="recommendations">Recommendations</option>
+            <option value="challenges">Challenges</option>
+          </select>
+          
+          <label for="thread-content">Content:</label>
+          <textarea id="thread-content" rows="5" placeholder="Write your content here..." required></textarea>
+          
+          <button type="submit" class="submit-thread-btn">Create Thread</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Banner -->
+    <div class="banner">
+      <h1>Community</h1>
+      <p>Read and write reviews. Join discussions or reading challenges.</p>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <button id="create-thread-btn" class="create-thread">Create Thread</button>
+        <nav class="sidebar-menu">
+          <h3>Feed</h3>
+          <ul>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Recent Activity</a></li>
+            <li><a href="#">New Threads</a></li>
+            <li><a href="#">Subscribed</a></li>
+          </ul>
+
+          <h3>Categories</h3>
+          <ul>
+            <li><a href="#">All</a></li>
+            <li><a href="#">General</a></li>
+            <li><a href="#">Book Reviews</a></li>
+            <li><a href="#">Recommendations</a></li>
+            <li><a href="#">Reading Challenges</a></li>
+            <li><a href="#">Release Discussion</a></li>
+            <li><a href="#">Favorite Characters</a></li>
+            <li><a href="#">Author Discussions</a></li>
+            <li><a href="#">Writing Tips & Discussions</a></li>
+            <li><a href="#">Forum Games</a></li>
+            <li><a href="#">Site Announcements</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <!-- Pinned Threads -->
+        <div class="pinned-threads">
+          <h2>Pinned Threads</h2>
+          <div class="thread">
+            <div class="thread-title">Support FableHaven (Donations)</div>
+            <div class="thread-stats">
+              <span>403,218 views</span>
+              <span>1,226 replies</span>
+            </div>
+          </div>
+          <div class="thread">
+            <div class="thread-title">New User Intro Thread - Welcome!</div>
+            <div class="thread-stats">
+              <span>341,799 views</span>
+              <span>14,622 replies</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recently Active Threads -->
+        <div class="recently-active-threads">
+          <h2>Recently Active Threads</h2>
+          <div class="thread">
+            <div class="thread-title">Pick a novel and share your thoughts...</div>
+            <div class="thread-stats">
+              <span>9,059 views</span>
+              <span>1,579 replies</span>
+            </div>
+          </div>
+          <div class="thread">
+            <div class="thread-title">Monthly Reading Challenge - December 2024</div>
+            <div class="thread-stats">
+              <span>794,800 views</span>
+              <span>134,642 replies</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 FableHaven. All Rights Reserved.</p>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Contact</a>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
