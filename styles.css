@@ -355,11 +355,13 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* 
-     ========================================================================== */
-     
+/* ========================================================================== */
+/* Start of my CSS */
+/* ========================================================================== */
+
+/* Home Page */
     
-/* General Reset */
+/* Reset default browser styles for consistent behavior across devices */
 * {
   margin: 0;
   padding: 0;
@@ -376,13 +378,13 @@ body {
 /* Navigation Bar */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;  /* Space out logo and links */
   align-items: center;
   background-color: #1A3A6E;
   padding: 1rem 2rem;
-  position: sticky;
+  position: sticky;             /* Stick to the top of the page */
   top: 0;
-  z-index: 1000;
+  z-index: 1000;            /* Ensure it's always on top */
 }
 
 .navbar .logo {
@@ -392,35 +394,37 @@ body {
 }
 
 .navbar ul {
-  list-style: none;
+  list-style: none;          /* Remove default bullet points */
   display: flex;
-  gap: 2rem;
+  gap: 2rem;                /* Space between menu items */
 }
 
-.navbar ul li a {
-  text-decoration: none;
+.navbar ul li a {            
+  text-decoration: none;    /* Remove underline from links */
   font-size: 1rem;
   color: #FFFFFF;
   font-weight: bold;
 }
 
 .navbar ul li a:hover {
-  color: #FFD700; /* Highlight links on hover */
+  color: #FFD700;        /* Highlight links on hover */
 }
 
-/* Best Novel Banner Section */
+/* ======================= Best Novel Banner Section ======================= */
+/* banner section */
+
 .best-novel-banner {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Align content to the left */
+  justify-content: flex-start;                                           /* Align content to the left */
   padding: 5rem 3rem;
-  height: 90vh;
+  height: 90vh;                                                            /* Full-page banner */
   background: url('images/banner.png') no-repeat center center/cover;
-  color: #FFFFFF; /* White text for better contrast */
+  color: #FFFFFF; 
   position: relative;
 }
 
-/* Lighten the gradient overlay for a softer effect */
+/* Gradient overlay */
 .best-novel-banner::before {
   content: "";
   position: absolute;
@@ -436,7 +440,7 @@ body {
   max-width: 50%;
   text-align: left;
   position: relative; /* To stay above the gradient overlay */
-  z-index: 2; /* Ensure the text is above the gradient */
+  z-index: 2;         /* Ensure the text is above the gradient */
 }
 
 .banner-content h1 {
@@ -445,19 +449,19 @@ body {
   font-weight: bold;
   margin-bottom: 1rem;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Subtle text shadow */
-  color: #FAF9F9; /* Slightly off-white for softness */
+  color: #FAF9F9; 
 }
 
 .banner-content .subtitle {
   font-size: 1.5rem;
   margin: 0.5rem 0;
-  color: #EAEAEA; /* Light gray for softer readability */
+  color: #EAEAEA; 
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Subtle shadow */
 }
 
 .banner-content .latest {
   font-size: 1rem;
-  color: #DDDDDD; /* Light gray */
+  color: #DDDDDD; 
   margin-top: 1rem;
   text-transform: uppercase;
   font-weight: bold;
@@ -470,14 +474,14 @@ body {
   font-style: italic;
   margin: 1rem 0;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Softer shadow */
-  color: #FFFFFF; /* Bright white for contrast */
+  color: #FFFFFF; 
 }
 
 .banner-content .author {
   font-size: 1.2rem;
   margin: 0.5rem 0;
   font-style: italic;
-  color: #E0E0E0; /* Softer white */
+  color: #E0E0E0; 
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Subtle shadow */
 }
 
@@ -495,13 +499,13 @@ body {
 }
 
 .banner-content button:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);                     /* Lift effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);     /* Add shadow for hover feedback */
 }
 
 
 /* Track Your Library Section */
-/* Stats Section */
+/* ======================= Library Stats Section ======================= */
 .about {
   padding: 4rem 2rem;
   background: #F9F5EB;
@@ -535,18 +539,18 @@ body {
   height: 180px;
   background: #FFD700;
   color: #000;
-  border-radius: 10px;
+  border-radius: 10px;                         /* Rounded corners*/
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Smooth hover effects */
 }
 
 .stat-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);                 /* Moves button up by 3 pixels when hovered, creating a 'lift' effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);     /* Highlight on hover */
 }
 
 .stat-box h3 {
@@ -558,7 +562,7 @@ body {
 
 .stat-box p {
   font-family: 'Georgia', serif;
-  font-size: 3rem; /* Bigger number size */
+  font-size: 3rem; 
   font-weight: bold;
   margin: 0;
 }
@@ -578,17 +582,18 @@ body {
   font-weight: bold;
   font-size: 1rem;
   border-radius: 8px;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;      /* Changes cursor to pointer to indicate the button is interactive */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;    /* Smooth transition for hover effects */
 }
 
 .about button:hover {
   background: #FFC107;
-  transform: translateY(-3px);
+  transform: translateY(-3px);                     /* Moves button up by 3 pixels when hovered, creating a 'lift' effect */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Currently Reading Section */
+
 .currently-reading {
   text-align: center;
   padding: 4rem 2rem 6rem 2rem;
@@ -611,8 +616,8 @@ body {
 
 /* Currently Reading: Container for each book */
 .book-item {
-  width: 250px; /* Increase the width */
-  height: auto; /* Auto-adjust height for content */
+  width: 250px; 
+  height: auto;   /* Flexible height for content */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -620,14 +625,14 @@ body {
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for clean look */
   border-radius: 8px; /* Rounded corners */
-  background-color: #FFFFFF; /* White background */
+  background-color: #FFFFFF; 
   padding: 16px; /* Add inner padding */
   margin: 20px; /* Add spacing between cards */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
 }
 
 .book-item:hover {
-  transform: translateY(-5px); /* Slight lift effect on hover */
+  transform: translateY(-5px);                /* Slight lift effect on hover */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
 
@@ -643,35 +648,35 @@ body {
 
 /* Title of the Book (Currently Reading) */
 .book-item h3 {
-  font-size: 18px; /* Slightly larger for readability */
-  color: #333333; /* Dark gray for contrast */
+  font-size: 18px;
+  color: #333333; 
   margin: 10px 0; /* Space around the title */
   font-weight: bold; /* Emphasize the title */
 }
 
 /* Currently Reading: Progress Container */
 .progress-container {
-  width: 90%; /* Match the width of the book cover */
-  background-color: #E0E0E0; /* Light gray for the progress background */
-  border-radius: 5px; /* Rounded edges for progress bar */
-  overflow: hidden; /* Ensures progress bar stays inside */
-  height: 10px; /* Height of the progress bar */
-  margin: 8px 0; /* Spacing above and below */
+  width: 90%;                    /* Match the width of the book cover */
+  background-color: #E0E0E0; 
+  border-radius: 5px;            /* Rounded edges for progress bar */
+  overflow: hidden;          /* Ensures progress bar stays inside */
+  height: 10px;    
+  margin: 8px 0; 
 }
 
 /* Currently Reading: Progress Bar */
 .progress-bar {
-  height: 100%; /* Full height of the container */
-  background-color: #FFD700; /* Bright yellow for progress */
-  width: 0%; /* Default width (set dynamically) */
+  height: 100%;                     /* Full height of the container */
+  background-color: #FFD700; 
+  width: 0%;                        /* Default width (set dynamically) */
   transition: width 0.3s ease; /* Smooth animation for progress updates */
 }
 
 /* Progress Text */
 .book-item p {
-  font-size: 17px; /* Slightly larger for better readability */
-  text-align: center; /* Keep alignment consistent */
-  line-height: 1.5; /* Add a bit of spacing for readability */
+  font-size: 17px; 
+  text-align: center;   /* Keep alignment consistent */
+  line-height: 1.5;   /* Add a bit of spacing for readability */
   margin-top: 10px; /* Slight spacing above */
 }
 
@@ -679,36 +684,36 @@ body {
 .top-rated {
   text-align: center;
   padding: 4rem 2rem 6rem 2rem;
-  background: #F9F5EB; /* Same background for consistency */
+  background: #F9F5EB; 
   color: #000000;
 }
 
 /* Top-Rated Novels Title */
 .top-rated h2 {
-  font-size: 2.5rem; /* Matches the Currently Reading title size */
+  font-size: 2.5rem; 
   margin-bottom: 2rem;
-  font-family: 'Georgia', serif; /* Same font as Currently Reading */
+  font-family: 'Georgia', serif; 
 }
 
 /* Novel List Layout */
 .novels-list-horizontal {
   display: flex;
-  gap: 2rem; /* Space between cards */
+  gap: 2rem;                 /* Space between cards */
   justify-content: center;
-  flex-wrap: wrap; /* Ensures responsiveness */
+  flex-wrap: wrap;         /* Ensures responsiveness */
 }
 
 /* Individual Novel Card */
 .novel-item {
-  width: 250px; /* Increase the width */
-  height: auto; /* Auto height for dynamic content */
+  width: 250px; 
+  height: auto; /* Flexible height for dynamic content */
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   border-radius: 8px; /* Smooth rounded corners */
-  background-color: #FFFFFF; /* White background */
+  background-color: #FFFFFF; 
   padding: 16px; /* Add inner padding */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effect */
   margin: 20px; /* Space between novels */
@@ -731,24 +736,25 @@ body {
 
 /* Title of the Book (Top-Rated Novels) */
 .novel-item h3 {
-  font-size: 18px; /* Slightly larger for readability */
+  font-size: 18px; 
   color: #333333; /* Dark gray for emphasis */
-  margin: 10px 0; /* Space around the title */
-  font-weight: bold; /* Make it stand out */
+  margin: 10px 0;   /* Space around the title */
+  font-weight: bold; 
 }
 
 /* Description Text (Top-Rated Novels) */
 .novel-item p {
-  font-size: 16px; /* Increase font size slightly */
-  color: #555555; /* Softer gray for subtleness */
-  margin-top: 8px; /* Space above the text */
-  line-height: 1.5; /* Improve readability with line height */
+  font-size: 16px; 
+  color: #555555; 
+  margin-top: 8px;  /* Space above the text */
+  line-height: 1.5;  /* Improve readability with line height */
   text-align: center; /* Center-align for uniformity */
 }
 
 
-/* ========================================================================================================================= */
-/* Footer */
+/* ======================= Footer ======================= */
+/* Footer styling for consistent appearance across pages */
+
 .footer {
   text-align: center;
   padding: 4rem 2rem;
@@ -770,20 +776,22 @@ body {
 
 
 
-/* Discover Novels Page */
+/* ======================= Discover Novels Page ======================= */
 
 /* Filters Section */
+/* Dropdowns and input for filtering novels by genre, rating, etc. */
+
 .filters {
   display: flex;
   justify-content: space-around;
   padding: 1.5rem 2rem;
   background-color: #F9F5EB;
-  border-bottom: 1px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0; /* Subtle separation */
 }
 
 .filters select,
 .filters input {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem;      /* Inner spacing */
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -795,9 +803,10 @@ body {
 }
 
 /* Sections */
+/* Common styling for each section */
 .section {
-  margin: 4rem 2rem; /* Increased vertical spacing between sections */
-  padding: 1rem 0; /* Added padding to make sections appear larger */
+  margin: 4rem 2rem;  /* Increased vertical spacing between sections */
+  padding: 1rem 0;   /* Added padding to make sections appear larger */
   margin-top: 1rem; /* Add more vertical spacing between sections */
   background-color: #FFFFFF;
 }
@@ -808,13 +817,14 @@ body {
   font-family: 'Georgia', serif;
   font-weight: bold;
   color: #333;
-  margin-bottom: 4rem; /* Increase spacing below the title for consistency */
+  margin-bottom: 4rem;  /* Space below titles */
   text-align: left;
   padding-left: 2rem; /* Padding for the title alignment */
   border-left: 4px solid #007BFF; /* Vertical accent bar */
 }
 
-
+/* ======================= Novel Cards ======================= */
+/* General styles for novel cards used across sections */
 .novels-list {
   display: flex;
   justify-content: space-evenly; 
@@ -823,8 +833,8 @@ body {
 }
 
 .novel-card {
-  width: 250px; /* Card width */
-  height: 350px; /* Card height */
+  width: 250px; 
+  height: 350px; 
   background: #ddd; /* Placeholder background */
   border-radius: 8px; /* Rounded corners */
   display: flex;
@@ -849,7 +859,8 @@ body {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
 }
 
-/* Top Novels */
+/* ======================= Top Novels ======================= */
+/* Layout for Top 100 Novels and other ranked sections */
 .top-header {
   display: flex;
   justify-content: space-between;
@@ -859,13 +870,13 @@ body {
 }
 
 .top-header .view-all {
-  font-size: 0.8rem; /* Smaller font size */
-  color: #007BFF; /* Blue text color */
+  font-size: 0.8rem; 
+  color: #007BFF; 
   text-decoration: none; /* Remove underline */
   padding: 0.3rem 0.6rem; /* Adjust padding  */
   border: 1px solid #007BFF; /* Blue border */
-  border-radius: 4px; /* Slightly smaller rounded corners */
-  background-color: #FFFFFF; /* White background */
+  border-radius: 4px;          /* Slightly smaller rounded corners */
+  background-color: #FFFFFF;
   transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effects */
   transform: translateY(-35px);
 }
@@ -875,16 +886,17 @@ body {
   color: #FFFFFF; /* White text on hover */
 }
 
+/* Individual Ranking in Top Novels */
 .novel-ranking {
   display: flex;
   align-items: center; /* Align content vertically */
   gap: 1.5rem; /* Space between image and details */
-  background-color: #f5f5f5; /* Light gray background */
-  border: 1px solid #ddd; /* Optional: subtle border */
-  padding: 1.5rem; /* Add padding inside the container */
-  border-radius: 8px; /* Rounded corners for a modern look */
+  background-color: #f5f5f5; 
+  border: 1px solid #ddd;     /* subtle border */
+  padding: 1.5rem;          /* Add padding inside the container */
+  border-radius: 8px;     /* Rounded corners for a modern look */
   margin-bottom: 1rem; /* Space between items */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* subtle shadow */
 }
 
 /* Top Novels Ranking Images - Book Shape */
@@ -922,14 +934,15 @@ body {
 }
 
 
-/* Community Page */
+/* ======================= Community Page ======================= */
+/* Styling specific to the Community page */
 
 .community-page {
   display: flex;
   flex-direction: column;
 }
 
-/* Banner Section */
+/* Community Banner Section */
 .banner {
   text-align: center;
   padding: 2rem;
@@ -953,7 +966,7 @@ body {
   margin: 2rem;
 }
 
-/* Sidebar */
+/* Sidebar Section */
 .sidebar {
   width: 20%;
   padding: 1rem;
@@ -1012,6 +1025,7 @@ body {
   margin-left: 2rem;
 }
 
+/* Threads in Community Page */
 .pinned-threads,
 .recently-active-threads {
   background-color: #FFFFFF;
@@ -1044,6 +1058,8 @@ body {
   font-size: 0.9rem;
   color: #555;
 }
+
+/* ======================= JS Style ======================= */
 
 /* Modal Overlay */
 .modal-overlay {
@@ -1113,24 +1129,55 @@ form textarea {
   background-color: #0056b3;
 }
 
+/* Modal Styling */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
 
 
+/* Me overiding stuff while refining */
 /* Novel Card Styling */
 .novel-card {
   position: relative;
-  width: 250px; /* Set a consistent width for all novel cards */
-  height: 350px; /* Set a consistent height for all novel cards */
-  overflow: hidden; /* Hide any overflow from the image */
-  border-radius: 8px; /* Rounded corners for the card */
-  margin: 10px; /* Spacing between cards */
+  width: 250px; 
+  height: 350px; 
+  overflow: hidden;     /* Hide any overflow from the image */
+  border-radius: 8px;  /* Rounded corners for the card */
+  margin: 10px;       /* Spacing between cards */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effect */
 }
 
 /* Image Inside Novel Card */
 .novel-card img {
-  width: 100%; /* Make the image cover the card width */
-  height: 100%; /* Make the image cover the card height */
+  width: 100%; 
+  height: 100%; 
   object-fit: cover; /* Ensure the image maintains its aspect ratio */
   border-radius: 8px; /* Match the corners with the card */
 }
@@ -1142,18 +1189,18 @@ form textarea {
   width: 100%; /* Cover the full width of the card */
   background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
   padding: 10px 0; /* Add some padding inside the overlay */
-  text-align: center; /* Center-align the text */
+  text-align: center; 
 }
 
 .novel-card .novel-title {
-  color: #fff; /* White text for visibility */
+  color: #fff; 
   font-size: 1rem;
   font-weight: bold;
   margin: 0;
 }
 
 .novel-card .overlay span {
-  color: #FFD700; /* Bright yellow for progress text */
+  color: #FFD700; 
   font-size: 0.9rem;
 }
 
@@ -1169,7 +1216,7 @@ form textarea {
 /* Hide additional cards for Dropped section */
 .novels-list.dropped .hidden-card {
   background-color: white; /* Match the page background */
-  opacity: 0; /* Ensure they are fully transparent */
+  opacity: 0;              /* Ensure they are fully transparent */
   pointer-events: none; /* Disable interactions */
 }
 
@@ -1230,37 +1277,9 @@ form textarea {
   display: flex;
 }
 
-/* Modal Styling */
-.modal-overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
+.novel-card .options-menu {
+  display: none; /* Hide the three-dot menu by default */
 }
-
-.modal-content {
-  background: white;
-  padding: 2rem;
-  border-radius: 8px;
-  width: 90%;
-  max-width: 500px;
-}
-
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: #333;
-}
-
 
 /* Discover Page titles */
 
@@ -1275,8 +1294,4 @@ form textarea {
   line-height: 1.4; /* Add extra spacing between lines */
   white-space: normal; /* Allow wrapping to the next line */
   overflow-wrap: break-word; /* Ensure long words break nicely */
-}
-
-.novel-card .options-menu {
-  display: none; /* Hide the three-dot menu by default */
 }
