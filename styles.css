@@ -1260,3 +1260,19 @@ form textarea {
   cursor: pointer;
   color: #333;
 }
+
+
+/* Discover Page titles */
+
+#discover-novels .novel-title {
+  margin-top: 0.5rem; 
+  margin-left: 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333; /* Ensure good readability */
+  text-align: center;
+  max-width: 200px; /* Match the width of the card */
+  line-height: 1.4; /* Add extra spacing between lines */
+  white-space: normal; /* Allow wrapping to the next line */
+  overflow-wrap: break-word; /* Ensure long words break nicely */
+}
