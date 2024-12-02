@@ -1276,3 +1276,7 @@ form textarea {
   white-space: normal; /* Allow wrapping to the next line */
   overflow-wrap: break-word; /* Ensure long words break nicely */
 }
+
+.novel-card .options-menu {
+  display: none; /* Hide the three-dot menu by default */
+}
