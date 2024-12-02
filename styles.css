@@ -1295,3 +1295,479 @@ form textarea {
   white-space: normal; /* Allow wrapping to the next line */
   overflow-wrap: break-word; /* Ensure long words break nicely */
 }
+
+
+/* Media Queries for Mobile */
+
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+  /* General body adjustments */
+  body {
+    padding: 0 1rem; /* Add padding for better spacing on smaller screens */
+    font-size: 0.9rem; /* Adjust font size for readability */
+  }
+
+  /* Navigation bar */
+  .navbar {
+    padding: 0.5rem 1rem; /* Reduce padding for a smaller navbar */
+    font-size: 0.8rem; /* Reduce overall font size */
+  }
+
+  .navbar .logo {
+    font-size: 1rem; /* Make the logo text smaller */
+    margin-bottom: 0.5rem; /* Add some spacing below the logo */
+  }
+
+  .navbar ul {
+    flex-direction: column; /* Stack links vertically for better fit */
+    align-items: flex-start; /* Align links to the left */
+    gap: 0.5rem; /* Reduce spacing between links */
+  }
+
+  .navbar ul li {
+    margin: 0; /* Remove unnecessary margins */
+    padding: 0.3rem 0; /* Add a little vertical padding for touch areas */
+  }
+
+  .navbar ul li a {
+    font-size: 0.8rem; /* Adjust link font size for smaller screens */
+    padding: 0.2rem 0.4rem; /* Reduce padding around links */
+  }
+
+  /* Best Novel Banner Section */
+  .best-novel-banner {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 3rem 1rem; /* Adjust padding for mobile */
+    height: auto; /* Allow height to adjust dynamically */
+    text-align: center; /* Center-align text */
+  }
+
+  .banner-content {
+    max-width: 100%;
+    text-align: center; /* Center-align text */
+  }
+
+  .banner-content h1 {
+    font-size: 2.5rem; /* Reduce size for smaller screens */
+  }
+
+  .banner-content h2 {
+    font-size: 1.8rem; /* Adjust size for readability */
+  }
+
+  .banner-content button {
+    width: 100%; /* Full-width button */
+    padding: 1rem; /* Add padding for better touch interaction */
+  }
+
+  /* Library Stats Section */
+  .library-stats {
+    flex-direction: column; /* Stack stats vertically */
+    gap: 1rem; /* Add spacing between stats */
+    text-align: center; /* Center-align stats */
+  }
+
+  .stat-box {
+    width: 90%; /* Full width for mobile */
+    margin: 0 auto; /* Center the stat box */
+  }
+
+  /* Currently Reading Section */
+  .currently-reading .books-grid {
+    flex-direction: column; /* Stack books vertically */
+    gap: 1rem; /* Add spacing between book items */
+    align-items: center; /* Center-align book grid */
+  }
+
+  .currently-reading .book-item {
+    width: 90%; /* Adjust to fit mobile screen */
+    margin: 0 auto; /* Center the book items */
+  }
+
+  .currently-reading .book-item img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  /* Top-Rated Novels Section */
+  .top-rated {
+    text-align: center; /* Center-align section */
+    padding: 1rem 0; /* Add padding for spacing */
+  }
+
+  .novels-list-horizontal {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-align novels */
+    gap: 1.5rem; /* Add spacing between novels */
+    margin: 1rem auto; /* Center the section horizontally */
+  }
+
+  .novel-item {
+    width: 90%; /* Adjust width for smaller screens */
+    max-width: 300px; /* Add a max width for consistency */
+    margin: 0 auto; /* Center individual items */
+  }
+
+  .novel-item img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  /* Discover Novels Page */
+  .filters {
+    flex-direction: column; /* Stack filters vertically */
+    gap: 1rem; /* Add spacing between filter elements */
+    text-align: center; /* Center-align filters */
+  }
+
+  .filters input,
+  .filters select {
+    width: 100%; /* Full width for inputs */
+  }
+
+  /* Footer */
+  .footer {
+    padding: 0.5rem 0; /* Further reduce padding for smaller screens */
+    font-size: 0.7rem; /* Make text slightly smaller on mobile */
+  }
+
+  .footer ul {
+    flex-direction: column; /* Stack links vertically */
+    gap: 0.5rem; /* Add small spacing between links */
+  }
+
+  .footer ul li a {
+    font-size: 0.7rem; /* Reduce font size */
+    padding: 0.2rem; /* Minimal padding for links */
+  }
+
+  /* Modal Content */
+  .modal-content {
+    width: 90%; /* Adjust modal width for smaller screens */
+    padding: 1rem; /* Reduce padding */
+  }
+
+  .modal-content form label {
+    font-size: 0.9rem; /* Adjust font size for readability */
+  }
+
+  .modal-content form input,
+  .modal-content form select,
+  .modal-content form textarea {
+    font-size: 0.9rem; /* Adjust input font size */
+  }
+
+    /* General Book Item Styles for Consistency */
+  .book-item {
+    width: 90%; /* Make all book covers consistent in width */
+    max-width: 300px; /* Set a maximum width */
+    margin: 0 auto; /* Center the book covers */
+    border-radius: 8px; /* Add rounded corners for a consistent look */
+    overflow: hidden; /* Ensure content fits within the card */
+    text-align: center; /* Center-align content */
+  }
+
+  .book-item img {
+    width: 100%; /* Make the image take up the full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure image covers the entire container */
+  }
+
+  .my-library .books-grid {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-align books */
+    justify-content: flex-start; /* Align items to the top */
+    width: 100%; /* Full width for the container */
+    max-width: 100%; /* Prevent restrictive widths */
+    padding: 0; /* Remove extra padding */
+    margin: 0 auto; /* Center-align the grid container */
+    gap: 1rem; /* Add space between items */
+  }
+
+  /* Book Item Adjustments */
+  .my-library .book-item {
+    display: flex; /* Use flexbox for internal alignment */
+    flex-direction: column; /* Stack content inside vertically */
+    align-items: center; /* Center-align content inside */
+    justify-content: flex-start; /* Align to the top */
+    width: 90%; /* Use 90% of the available width */
+    max-width: 300px; /* Cap the maximum width */
+    margin: 0 auto; /* Center the book items */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Prevent content overflow */
+    aspect-ratio: 2 / 3; /* Maintain consistent aspect ratio */
+    box-sizing: border-box; /* Ensure padding and borders are included in the width */
+  }
+
+  /* Reset Margins for Images and Text */
+  .my-library .book-item img {
+    width: 100%; /* Fully responsive image */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image fills its container without stretching */
+    border-radius: 8px; /* Match the container's rounded corners */
+  }
+
+  .my-library .book-item h3,
+  .my-library .book-item p {
+    margin: 0; /* Reset any default margins */
+    padding: 0.5rem; /* Add some padding for better readability */
+    text-align: center; /* Center-align text */
+  }
+
+  /* Parent Container Reset */
+  .my-library {
+    padding: 0; /* Remove padding from the parent container */
+    margin: 0; /* Remove any default margin */
+  }
+
+  .novels-list {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-align the items */
+    gap: 1.5rem; /* Add consistent spacing between cards */
+    padding: 0; /* Remove extra padding */
+    margin: 0 auto; /* Center the entire list */
+    width: 100%; /* Full width for the grid */
+  }
+
+  /* Adjust the novel-card container */
+  .novel-card {
+    width: 90%; /* Make the cards responsive to the screen size */
+    max-width: 300px; /* Set a max width to maintain consistent dimensions */
+    margin: 0 auto; /* Center the cards */
+    border-radius: 8px; /* Add rounded corners for a polished look */
+    overflow: hidden; /* Prevent content overflow */
+    aspect-ratio: 2 / 3; /* Maintain consistent aspect ratio */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow */
+  }
+
+  /* Ensure images fit within the novel-card container */
+  .novel-card img {
+    width: 100%; /* Fully responsive image width */
+    height: 100%; /* Ensure the image fills the container */
+    object-fit: cover; /* Ensure images don't stretch or distort */
+    border-radius: 8px; /* Match the container's rounded corners */
+  }
+
+  /* Center-align the overlay text inside the cards */
+  .novel-card .overlay {
+    padding: 0.5rem; /* Adjust padding for better spacing */
+    text-align: center; /* Center-align text */
+    width: 100%; /* Ensure the overlay spans the full width */
+  }
+
+  .novel-card .overlay .novel-title {
+    font-size: 1rem; /* Adjust title font size for mobile */
+    margin-bottom: 0.5rem; /* Add spacing below the title */
+  }
+
+  .novel-card .overlay .bottom-info {
+    display: flex;
+    justify-content: space-between; /* Space out chapters-read and rating */
+    width: 100%;
+    font-size: 0.9rem; /* Adjust font size for mobile */
+  }
+
+  /* Reset and align the Dropped section specifically */
+  .novels-list.dropped {
+    display: flex;
+    flex-direction: column; /* Stack dropped covers vertically */
+    align-items: center; /* Center-align the dropped covers */
+    gap: 1.5rem; /* Add spacing between dropped items */
+    padding: 0; /* Remove extra padding */
+    margin: 0 auto; /* Center the dropped list */
+    width: 100%; /* Full width for the dropped section */
+  }
+
+  .novels-list.dropped .novel-card {
+    width: 90%; /* Same width as other cards */
+    max-width: 300px; /* Maintain consistency with other sections */
+    margin: 0 auto; /* Center-align each dropped card */
+    border-radius: 8px; /* Match the design */
+    aspect-ratio: 2 / 3; /* Keep the aspect ratio consistent */
+  }
+
+  .novels-list.dropped .novel-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  
+  /* Center Titles in Discover Novels Page */
+  #discover-novels .novel-title {
+    text-align: center; /* Center-align novel titles */
+    margin-top: 0.5rem; /* Add spacing above */
+    font-size: 1rem; /* Adjust font size for mobile readability */
+    font-weight: bold; /* Emphasize the title */
+    padding-right: 2rem;
+  }
+
+  #discover-novels .novel-card {
+    margin: 0 auto; /* Center-align novel cards */
+    width: 90%; /* Ensure the cards fit within the screen */
+    max-width: 500px; /* Keep consistent sizing */
+  }
+
+  .novel-ranking {
+    display: flex;
+    flex-direction: row; /* Keep horizontal alignment */
+    align-items: center; /* Vertically align items */
+    justify-content: flex-start; /* Align items to the left */
+    width: 95%; /* Reduce container width */
+    max-width: 100%; /* Prevent overflow */
+    padding: 1rem; /* Add padding for spacing */
+    margin: 0 auto 1rem auto; /* Center container horizontally */
+    border: 1px solid #ddd; /* Add a subtle border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    background-color: #fff; /* Ensure a clean background */
+  }
+
+  /* Cover Image */
+  .novel-ranking img {
+    width: 60px; /* Set a fixed width for the cover */
+    height: 80px; /* Maintain proportional height */
+    object-fit: cover; /* Prevent image distortion */
+    border-radius: 4px; /* Optional: Slightly round the corners */
+  }
+
+  /* Text Container (Details Section) */
+  .novel-ranking div {
+    flex: 1; /* Allow the details section to take up remaining space */
+    display: flex;
+    flex-direction: column; /* Stack title and details vertically */
+    justify-content: flex-start; /* Align text to the top */
+    padding-left: 0; /* Align text closer to the left */
+    margin-left: 0; /* Ensure no additional space between text and container */
+  }
+
+  /* Novel Title */
+  .novel-ranking div h3 {
+    font-size: 1.2rem; /* Adjust font size for readability */
+    font-weight: bold; /* Make the title bold */
+    margin: 0 0 0.3rem 0; /* Reduce spacing below the title */
+    text-align: left; /* Align text to the left */
+    line-height: 1.4; /* Improve readability */
+    color: #333; /* Ensure dark text for visibility */
+  }
+
+  /* Details Text */
+  .novel-ranking div p {
+    font-size: 0.9rem; /* Adjust font size for mobile */
+    margin: 0.1rem 0; /* Reduce spacing between details */
+    color: #666; /* Softer text color for secondary details */
+    line-height: 1.4; /* Adjust line height for better readability */
+    text-align: left; /* Align text to the left */
+  }
+
+  /* Readers/Rating Section */
+  .novel-ranking div .rating {
+    margin-top: 0.5rem; /* Add slight spacing above */
+    font-size: 0.9rem; /* Adjust font size */
+    color: #333; /* Ensure color visibility */
+  }
+
+  .community-page {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    padding: 0; /* Remove unnecessary padding */
+    gap: 1rem; /* Add spacing between sections */
+  }
+
+  /* Banner */
+  .banner {
+    text-align: center;
+    padding: 1rem;
+    background-color: #1A3A6E;
+    color: #fff;
+  }
+
+  /* Sidebar (Feed and Categories) */
+  .sidebar {
+    width: calc(100% - 2rem); /* Full width with slight padding */
+    padding: 1rem; /* Add padding for readability */
+    margin: 0; /* Align directly to the left */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #fff; /* Clean background */
+  }
+
+  /* Sidebar Menu */
+  .sidebar-menu h3 {
+    font-size: 1rem; /* Adjust font size */
+    margin-bottom: 0.5rem; /* Add space below headings */
+  }
+
+  .sidebar-menu ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding inside list */
+    margin: 0; /* Remove margins */
+  }
+
+  .sidebar-menu ul li {
+    font-size: 0.9rem; /* Smaller text size */
+    margin-bottom: 0.5rem; /* Spacing between items */
+    color: #555; /* Softer text color */
+  }
+
+  /* Create Thread Button */
+  .create-thread {
+    width: 100%; /* Full width button */
+    padding: 0.8rem; /* Adjust padding */
+    font-size: 1rem; /* Adjust font size */
+    margin-bottom: 1rem; /* Add spacing below */
+  }
+
+  /* Pinned Threads and Recently Active Threads */
+  .pinned-threads,
+  .recently-active-threads {
+    width: calc(100% - 1rem); /* Full width with slight padding */
+    padding: 1rem; /* Add inner padding */
+    margin: 0; /* Align directly to the left */
+    background-color: #fff; /* Clean background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px; /* Rounded corners */
+  }
+
+  /* Thread Cards */
+  .thread {
+    display: flex;
+    flex-direction: column; /* Stack thread details vertically */
+    padding: 0.8rem 0; /* Add padding inside */
+    border-bottom: 1px solid #E0E0E0; /* Divider between threads */
+  }
+
+  .thread:last-child {
+    border-bottom: none; /* Remove border for the last thread */
+  }
+
+  .thread-title {
+    font-size: 1rem; /* Adjust font size */
+    font-weight: bold; /* Make titles stand out */
+    color: #333; /* Dark text for visibility */
+    margin-bottom: 0.5rem; /* Add spacing below */
+    text-align: left; /* Align titles to the left */
+  }
+
+  .thread-stats {
+    display: flex;
+    justify-content: space-between; /* Space stats evenly */
+    font-size: 0.9rem; /* Adjust font size */
+    color: #555; /* Softer text color */
+    text-align: left; /* Align stats to the left */
+  }
+
+  /* Main Content */
+  .main-content {
+    width: calc(100% - 2rem); /* Full width with slight padding */
+    padding: 1rem; /* Add padding inside */
+    margin: 0; /* Align directly to the left */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    border-radius: 8px; /* Rounded corners */
+  }
+}
